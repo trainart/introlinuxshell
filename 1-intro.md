@@ -1,8 +1,10 @@
-# Shell programming in Linux
+# Introduction to Linux OS and basics of Bash programming
 
-## Linux Terminal (Լինուքսի հրամանների տողը)
+
+### Linux Terminal (Լինուքսի հրամանների տողը)
 
 > Ներածական հարցեր թեմայի վերաբերյալ 
+* Որքանո՞վ եք ծանոթ Linux-ին
 * Ծանո՞թ եք տերմինալի միջոցով Linux-ում աշխատելուն
 * Եթե այո ի՞նչ ծրագրի միջոցով
 * Ծանո՞թ եք SSH-ով միանալուն
@@ -25,7 +27,7 @@ SSH-ով միանալու պարագայում գաղտնաբառի փոխարե
 
 <br><br>
 
-## Linux VM remote access
+### Linux VM remote access
 
 * **Oracle VM VirtualBox** միջավայրում միացրեք **Ubuntu-22.04** վիրտուալ մեքենան
 
@@ -36,7 +38,7 @@ SSH-ով միանալու պարագայում գաղտնաբառի փոխարե
 * Միացեք SSH-ով տվյալ անունով ու հասցեյով:
 
 
-## Linux Terminal, CLI Basics
+### Linux Terminal, CLI Basics
 
 > Ինչ է Terminal-ը
 
@@ -190,7 +192,7 @@ date +"%d-%m-%Y"
 
 <br><br>
 
-## File Management Commands
+### File Management Commands
 
 > Ֆայլերի անվանումը
 * Windows
@@ -202,7 +204,7 @@ date +"%d-%m-%Y"
   * `/bin/ls`
 
 
-### Ծանոթացում ֆայլային համակարգի կառուցվածքին
+#### Ծանոթացում ֆայլային համակարգի կառուցվածքին
 
 ```bash 
 ls /
@@ -212,7 +214,7 @@ ls /
 man file-hierarchy
 ```
 
-### PRACTICE
+#### PRACTICE
 
 Տեղադրեք `tree` ծրագիրը
 
@@ -362,7 +364,7 @@ rm -r ~/TEST
 ```
 
 
-### PRACTICE
+#### PRACTICE
 
 * `clear` հրամանը մաքրում է էկրանը
   * ստեղծել `c` անունով `alias`, որ մաքրում է էկրանը

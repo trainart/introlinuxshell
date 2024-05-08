@@ -1,4 +1,4 @@
-# Shell programming in Linux
+# Introduction to Linux OS and basics of Bash programming
 
 ## Shell scripting basics
 
