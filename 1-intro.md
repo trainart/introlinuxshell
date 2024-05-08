@@ -616,7 +616,8 @@ There is also much rarely used **Visual** mode for highlight or select text for 
 <img src=https://github.com/trainart/introlinuxshell/blob/main/img/vim-modes.jpg width=50% height=50% >
 
 > REMEMBER ! 
-> If you get confused in which mode you are in just **press the `ESC` key a couple of times and start over** with what you were doing.
+> If you get confused in which mode you are in <br>
+> just **press the `ESC` key a couple of times and start over** with what you were doing.
 
 <br><br>
 
