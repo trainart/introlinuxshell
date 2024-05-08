@@ -621,11 +621,12 @@ There is also much rarely used **Visual** mode for highlight or select text for 
 
 <br><br>
 
-> Execute Mode Commands
 
-* **ZZ**    - Quit saving changes if any 
+> Recommended Command:
+* **ZZ**    - Save changes in current file if any and quit 
 
-other variants:
+> Other:
+ 
 * **:q**	- Quit when no changes have been made after last save
 * **:q!**	- Quit ignoring changes made
 * **:wq**	- Save current file and quit
@@ -645,5 +646,5 @@ Create new file in `vi` editor
 `shell programming in Linux`
 <br><br>
 * Press the `ESC` key for command mode
-* Type `:wq` to save and quit the file
+* Type `ZZ` to save and quit the file
 
