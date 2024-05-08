@@ -172,6 +172,9 @@ date
 ```bash
 date --help
 ```
+
+> Use `Shift-PgUp` to scroll up 
+
 ```bash
 date +"%d-%m-%Y"
 ```
