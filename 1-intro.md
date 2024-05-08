@@ -244,11 +244,11 @@ man file-hierarchy
 
 `ls [options] <directory/file>`
 
-* `-l`     ընլայնված ցուցակ
+* `-l`  ընդլայնված ցուցակ
 * `-a`  ցույց տալ բոլոր ֆալերը  (նեռարյալ .-ով սկսվող ֆալերը )
-* `-S`   դասավորել ֆայլերը ըստ չափի (–lS)
+* `-S`  դասավորել ֆայլերը ըստ չափի (–lS)
 * `-r`  Հակադարձ դասավորման կարգով (–lSr)
-* `-h`    Մարդու համար ավելի ընթեռնելի (ֆայլերի չափը k, M, G-ով)
+* `-h`  Մարդու համար ավելի ընթեռնելի (ֆայլերի չափը k, M, G-ով)
 
 
 <hr> 
@@ -259,13 +259,13 @@ man file-hierarchy
 > Բացեք կայքը և մուտքագրեք հրաման, օրինակ
 
 ```bash
-id -n -u
+id -u -n
 ```
 
 կամ
 
 ```bash
-echo -n "Be patient " ; sleep 2 ; echo -n "to learn Shell Programming in Linux" ; sleep 2
+echo -n "Be patient " ; sleep 2 ; echo -n "to learn"
 ```
 <hr> 
 
@@ -414,8 +414,14 @@ There are several tool to view text files contents.
 
 > Օրինակներ
  
-`less /etc/services`
-`ls /usr/bin | sort -r | less`
+```bash
+less /etc/services
+```
+
+```bash
+ls /usr/bin | sort -r | less
+```
+
 
 <br><br>
 
@@ -423,11 +429,18 @@ There are several tool to view text files contents.
 
 > Օրինակներ
  
-`cat /etc/services`
+```bash
+cat /etc/services
+```
 
-`cat /etc/services | sort -r `
+```bash
+cat /etc/services | sort -r
+```
 
-`cat /etc/services | sort -r | less`
+```bash
+cat /etc/services | sort -r | less
+```
+
 
 <br><br>
 
@@ -435,13 +448,22 @@ There are several tool to view text files contents.
 
 > Օրինակներ
  
-`head /etc/services`
+```bash
+head /etc/services
+```
 
-`head -1 /etc/services`
+```bash
+head -1 /etc/services
+```
 
-`head -1 /etc/services > /tmp/h1`
+```bash
+head -1 /etc/services > /tmp/h1
+```
 
-`head -1 /etc/services >> /tmp/h1`
+```bash
+head -1 /etc/services >> /tmp/h1
+```
+
  
 <br><br>
 
@@ -449,13 +471,21 @@ There are several tool to view text files contents.
 
 > Օրինակներ
  
-`tail /etc/services`
+```bash
+tail /etc/services
+```
 
-`tail -1 /etc/services`
+```bash
+tail -1 /etc/services
+```
 
-`tail -1 /etc/services > /tmp/s1`
+```bash
+tail -1 /etc/services > /tmp/s1
+```
 
-`tail -1 /etc/services >> /tmp/s1`
+```bash
+tail -1 /etc/services >> /tmp/s1
+```
 
 <br><br>
 
@@ -463,13 +493,21 @@ There are several tool to view text files contents.
 
 > Օրինակներ
  
-`cat /etc/services | grep http `
+```bash
+cat /etc/services | grep http
+```
 
-`ls /usr/bin | grep log`
+```bash
+ls /usr/bin | grep log
+```
 
-`ls /usr/bin | grep ^log`
+```bash
+ls /usr/bin | grep ^log
+```
 
-`ls /usr/bin | grep log$`
+```bash
+ls /usr/bin | grep log$
+```
 
 
 
@@ -477,9 +515,9 @@ There are several tool to view text files contents.
 
 ## I/O Redirection
 
-<img src=https://github.com/arthur7373/shell/blob/main/shell-course/io-redir-1.jpg width=50% height=50% >
+<img src=https://github.com/introlinuxshell/blob/main/img/io-redir-1.jpg width=50% height=50% >
 <br><br>
-<img src=https://github.com/arthur7373/shell/blob/main/shell-course/io-redir-2.jpg width=50% height=50% >
+<img src=https://github.com/introlinuxshell/blob/main/img/io-redir-2.jpg width=50% height=50% >
 
 > STDOUT - Standard output  		>     >> 
  
@@ -497,7 +535,7 @@ There are several tool to view text files contents.
 
 Pipeline - Մեկ հրամանի STDOUT-ը ուղարկել այլ հրամանի STDIN-ին
 
-<img src=https://github.com/arthur7373/shell/blob/main/shell-course/pipes-1.jpg width=50% height=50% >
+<img src=https://github.com/introlinuxshell/blob/main/img/pipes-1.jpg width=50% height=50% >
 
 > Օրինակ
 
@@ -575,7 +613,7 @@ Even if any other editor will not be present or available to install Vi/Vim will
 
 There is also much rarely used **Visual** mode for highlight or select text for copying, deleting, etc 
 
-<img src=https://github.com/arthur7373/shell/blob/main/shell-course/vim-modes.jpg width=50% height=50% >
+<img src=https://github.com/introlinuxshell/blob/main/img/vim-modes.jpg width=50% height=50% >
 
 > REMEMBER ! 
 > If you get confused in which mode you are in just **press the `ESC` key a couple of times and start over** with what you were doing.
@@ -584,6 +622,9 @@ There is also much rarely used **Visual** mode for highlight or select text for 
 
 > Execute Mode Commands
 
+* **ZZ**    - Quit saving changes if any 
+
+other variants:
 * **:q**	- Quit when no changes have been made after last save
 * **:q!**	- Quit ignoring changes made
 * **:wq**	- Save current file and quit
