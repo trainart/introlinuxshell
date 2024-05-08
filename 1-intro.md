@@ -226,20 +226,6 @@ ls /
 man file-hierarchy
 ```
 
-#### PRACTICE
-
-Տեղադրեք `tree` ծրագիրը
-
-```bash
-sudo apt install tree
-
-```
-
-Ցուցադրեք "**/**"-ի մեջ առկա գլխավոր դիրեկտորիաները `tree` հրամանի միջոցով
-
-Գտեք անհրաժեշտ պարամետրերը `man tree`-ի օգնությամբ
-
-
 > Ավելին իմանալու համար. https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard 
 
 
