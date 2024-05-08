@@ -40,5 +40,3 @@
 <br><br>
 <img src=https://github.com/trainart/introlinuxshell/blob/main/img/intro18.jpg width=70% height=70% > 
 <br><br>
-<img src=https://github.com/trainart/introlinuxshell/blob/main/img/intro19.jpg width=70% height=70% > 
-<br><br>
