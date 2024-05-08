@@ -152,8 +152,17 @@ id
 id --help
 ```
 ```bash
-id -n -u
+id -u
 ```
+
+```bash
+id -u -n
+```
+
+```bash
+id -un
+```
+
 
 * date - display date
 
