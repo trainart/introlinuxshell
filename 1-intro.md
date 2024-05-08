@@ -116,7 +116,7 @@ CLI / Shell / Bash աշխատում է ինտերակտիվ եղանակով, ո
 
 Հրամանների կառուցվածք
 
-<img src=https://github.com/arthur7373/shell/blob/main/shell-course/command-structure.png width=50% height=50% >
+<img src=https://github.com/trainart/introlinuxshell/blob/main/img/command-structure.png width=50% height=50% >
 
 > Հրամանների օրինակներ
 
