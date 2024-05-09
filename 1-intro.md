@@ -565,22 +565,29 @@ _( **echo $?**  - ցույց է տալիս վերջին հրամանի ելքի 
 
 > Օրինակներ
 
-* `cd /home && pwd`
-* `cd /hh && pwd`
-  * QUESTION: how to get rid of `cd: /hh: No such file or directory`
-* `cd /home || echo "Wrong directory"`
-  * change `/home` to `/hh` and run again
-* ```bash
-  DD=/bin ; [ -d $DD ] ; echo "Exit code is: $?"
-  ```
-* ```bash
-  DD=/bn ; [ -d $DD ] ; echo "Exit code is: $?"
-  ```
-  
+```bash
+cd /home && pwd
+```
+```bash
+cd /hh && pwd
+```
+* ՀԱՐՑ՝ ինչպես ազատվել `cd: /hh: No such file or directory` հաղորդագրությունից
 
+```bash
+cd /home || echo "Wrong directory"
+```
+* Փոխեք `/home`-ը `/hh`-ով
 
+```bash
+DD=/bin ; [ -d $DD ] ; echo "Exit code is: $?"
+```
+
+```bash
+DD=/bn ; [ -d $DD ] ; echo "Exit code is: $?"
+```
 
 <br><br>
+
 ## Text Editors (Խմբագիրներ)
 
 * **nano**		Standard Linux editor - for newcomers - present in most LINUX versions
@@ -589,11 +596,11 @@ _( **echo $?**  - ցույց է տալիս վերջին հրամանի ելքի 
 There are more editors, like **mcedit** or **joe**, which are mostly not installed by default.
 
 
-### Nano editor basics
+### Nano basics
 
 `nano` is an easy to use text editor for UNIX/Linux operating systems. 
 It includes all the basic functionality of text editor.
-When you run `nano` main commands are displayed at the bottom. 
+When you run `nano` main commands are displayed at the bottom.
 
 Most commands are prefixed with `^`, which means `Ctrl` key<br> 
 *  `^G` means press `Ctrl`+`g`  (NOT `G`)
@@ -602,7 +609,7 @@ Most commands are prefixed with `^`, which means `Ctrl` key<br>
 ### Vim/Vi basics
 
 `vim`/`vi` is a very powerful editor UNIX/Linux text editor. 
-The reason to know it's basics is that it is initially available almost on any UNIX/Linux system.
+The reason to know its basics is that it is initially available almost on any UNIX/Linux system.
 Even if any other editor will not be present or available to install Vi/Vim will be there to enable you editing text files.
 (one way to learn `vi` basics is to type `vimtutor` and follow instructions).
 
@@ -641,10 +648,13 @@ Create new file in `vi` editor
 
 * Type `vi testfile1` to open `vi` with new file `testfile1`
 * Press the `i` key to switch to **Insert/Input** mode.
-* Type something like: <br><br> 
-`We are happy to learn`<br>
-`shell programming in Linux`
-<br><br>
+* Type something like:
+
+```bash
+We are happy to learn
+shell programming in Linux
+```
+
 * Press the `ESC` key for command mode
 * Type `ZZ` to save and quit the file
 
