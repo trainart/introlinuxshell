@@ -42,8 +42,9 @@ cat ~/s1
 
 <br><br>
 
-Now do the same manually. Create new file `~/p1` with some text editor.
-and put there following code:
+Now do the same manually. 
+* Create new file `~/p1` with some text editor.
+* Put there following code:
 
 ```bash
 #!/bin/bash
@@ -142,7 +143,7 @@ Now try providing all 3 positional parameters
 ./s3 -r / l
 ```
 
-### Example with Variables
+### Variables
 
 The following script creates a variable called **NAME** and assigns the value "HELLO STUDENT".
 
@@ -162,63 +163,61 @@ Execute the above script, which will output the text to the terminal.
 
 **Task 1: Modify the script to output 1-st positional parameter after HELLO STUDENT.**
 
-**Task 2: Have fun with _cowsay_**
-
-1. Install `cowsay` program
-```bash
-sudo yum -y install cowsay
-```
-
-2. Run it
-```bash
-cowsay Hi Shell Programmin student
-```
-
+**Task 2: Have fun with _cowsay_** 
 It can draw different pictures and say the text you provide.
 
+Run it
+```bash
+cowsay Hi Student
+```
 
-3. Create `anim` **script** which draws other animal mentioned as 1-st parameter, saying what you will give 2-nd parameter.
-   1. List of pictures are available with
-   ```bash 
-   cowsay -l
-   ```
-   2. Find the option to select picture
-      1. ```bash
-         cowsay -h
-         ```
-      2. ```bash
-         man cowsay
-         ```
-   3. Script should work like `anim elephant HELLO`
+
+
+3. Create `anim` **script** which 
+   1. draws animal mentioned as 1-st parameter,
+   2. saying what you will give 2-nd parameter.
+   
+Script should work like `anim elephant HELLO`
 
 Example:
 ![img.png](shell-course/elephant.png)
 
-## Variables - Local & Global
+
+   HINT! List of pictures are available with
+      ```bash 
+      cowsay -l
+      ```
+         Find the option to select picture
+      ```bash
+      cowsay -h
+      ```
+
 
 <br><br>
 
+
+## Environment Variables
+
 When you work in shell, there are already many defined shell variables.
 
-**Global variables** (also called **environment variables**) - available to all shells. 
-The `env` or `printenv` commands can be used to display environment variables. 
+**Environment Variables** can be listed using the `set` command:
 
-**Local variables** are visible only within the block of code.  
-Using the `set` built-in command without any options will display a list of all variables 
-(including environment variables) and functions.  
+```bash
+set
+```
 
-In a function, a local variable has meaning only within that function block. 
+
 
 ```bash
 set | grep HIST
 ```
 
 ```bash
-set | grep NAME
+set | grep SHELL
 ```
 
 ```bash
-env | grep NAME
+set | grep USER
 ```
 
 
@@ -250,6 +249,7 @@ Execute the above script, which will output the text to the terminal.
 
 **Task: Modify the script to get 2 variables from 2 positional parameters**
 
+
 <br><br>
 Notice that in case **a** is NOT less that **b**, nothing is printed.
 Let's add that variant too.
@@ -271,7 +271,7 @@ Add below code just after first line `#!/bin/bash`
 ```bash
 if [[ $# < 2 ]] 
 then 
-  echo "Please provide 2 numbers as parameters"
+  echo "Provide 2 numbers as parameters"
   echo "Usage: $0 num1, num2" 
 exit 
 fi 
@@ -371,12 +371,14 @@ b=${2}
 isnumber $a
 isnumber $b
 
-if [ $a -lt $b ]
+if   [ $a -lt $b ]
 then
         echo "$a < $b"
-else
+elif [ $a -gt $b ]
+then
         echo "$a > $b"
-
+else
+        echo "$a = $b"
 fi
 
 EOF1
@@ -881,7 +883,7 @@ To stop it press `Ctrl-Z`
 and then run:  
 `kill -9 %1` 
 or
-`kill -9 case3`
+`killall -9 case3`
 
 
 
