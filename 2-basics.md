@@ -30,7 +30,8 @@ Try running this simple script:
 
 Let's now understand what was done above.
 
-We used method called _Here document_ to create the script and made it executable with `chmod`.
+We used method called _Here document_ to create the script. 
+And made it executable with `chmod`.
 The script itself is a single `ls` command, that outputs detailed (-l) contents of directory _/usr/bin/_
 
 Check the contents of the script you created:
@@ -38,6 +39,28 @@ Check the contents of the script you created:
 ```bash
 cat ~/s1
 ```
+
+<br><br>
+
+Now do the same manually. Create new file `~/p1` with some text editor.
+and put there following code:
+
+```bash
+#!/bin/bash
+echo "Hello !"
+echo "Welcome to Linux Training."
+```
+
+Make it executable
+```
+chmod +x ~/p1
+```
+
+Run
+```bash
+~/p1
+```
+
 
 <br><br>
 
