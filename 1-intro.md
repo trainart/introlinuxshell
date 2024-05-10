@@ -448,7 +448,25 @@ Create file `~/newfile`
 cat > ~/newfile
 ```
 
+Check what's inside
 
+```bash
+cat ~/newfile
+```
+
+
+Add text to the file `~/newfile`
+(end with `Ctrl-D`)
+
+```bash
+cat >> ~/newfile
+```
+
+Again check what's inside
+
+```bash
+cat ~/newfile
+```
 
 
 <br><br>
@@ -529,14 +547,28 @@ ls /usr/bin | grep log$
 <img src=https://github.com/trainart/introlinuxshell/blob/main/img/io-redir-2.jpg width=50% height=50% >
 
 > STDOUT - Standard output  		>     >> 
- 
-* `ls /etc > ~/stdout`
-* `ls /etc >> ~/stdout`
 
-> STDERR - Standard error output		2>   2>> 
-* `ls /e > ~/stdout`
-* `ls /e > ~/stdout 2> ~/stderr`
-* `ls /e > ~/stdout 2> /dev/null`
+```bash
+ls /etc > ~/stdout
+```
+
+```bash
+ls /etc >> ~/stdout
+```
+
+> STDERR - Standard error output		2>   2>>
+
+```bash
+ls /e > ~/stdout
+``` 
+
+```bash
+ls /e > ~/stdout 2> ~/stderr
+```
+
+```bash
+ls /e > ~/stdout 2> /dev/null
+```
 
 <br><br>
 
@@ -548,11 +580,21 @@ Pipeline - Մեկ հրամանի STDOUT-ը ուղարկել այլ հրաման�
 
 > Օրինակ
 
-`ls /usr/bin | sort -r`
+```bash
+ls /usr/bin | tail -15 | sort -r
+```
+
+
+```bash
+ls /usr/bin | tail -15 | sort
+```
+
 
 Նույնը չէ, ինչ հաջորդաբար կատարումը `;`-ով
 
-`ls /usr/bin ; sort -r`
+```bash
+ls /usr/bin ; tail -15 ; sort
+```
 
 > Հրամանների համակցում
 
@@ -577,6 +619,7 @@ _( **echo $?**  - ցույց է տալիս վերջին հրամանի ելքի 
 ```bash
 cd /home && pwd
 ```
+
 ```bash
 cd /hh && pwd
 ```
