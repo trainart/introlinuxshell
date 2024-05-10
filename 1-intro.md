@@ -441,6 +441,15 @@ cat /etc/services | sort -r
 cat /etc/services | sort -r | less
 ```
 
+Create file `~/newfile`
+(end with `Ctrl-D`)
+
+```bash
+cat > ~/newfile
+```
+
+
+
 
 <br><br>
 
