@@ -148,9 +148,11 @@ echo ; echo -n "Be patient " ; sleep 2 ; echo -n "to learn " ; sleep 2 ; echo "S
 ```bash
 id
 ```
+
 ```bash
 id --help
 ```
+
 ```bash
 id -u
 ```
@@ -169,6 +171,7 @@ id -un
 ```bash
 date
 ```
+
 ```bash
 date --help
 ```
