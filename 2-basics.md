@@ -147,19 +147,21 @@ Now try providing all 3 positional parameters
 
 The following script creates a variable called **NAME** and assigns the value "HELLO STUDENT".
 
-Example of simple variable assignment usage
+Create below script in file `~/v1` with some text editor
 
 ```bash
-cat  > ~/v1  << "EOF1"
 #!/bin/bash
 NAME="HELLO STUDENT"
 echo $NAME
-EOF1
-chmod +x ~/v1
+```
 
+Make it executable
+```bash
+chmod +x ~/v1
 ```
 
 Execute the above script, which will output the text to the terminal.
+
 
 **Task 1: Modify the script to output 1-st positional parameter after HELLO STUDENT.**
 
@@ -217,7 +219,7 @@ set | grep SHELL
 ```
 
 ```bash
-set | grep USER
+set | grep ^USER
 ```
 
 
